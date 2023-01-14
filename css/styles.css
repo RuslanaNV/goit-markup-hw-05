@@ -443,6 +443,7 @@ body {
     align-items: center;
     justify-content:center ;
     fill: var(--helper-text-color);
+
     transition: border-color var(--duration), fill var(--duration);
 }
 
@@ -552,7 +553,6 @@ fill: var(--light-mode-color);
 
 /*--------BTN-------*/
 .caption .btn {
-    /* IRIS */
     color: var(--primaru-brand-color);
     background-color: var(--light-mode-color);
 
@@ -602,11 +602,40 @@ fill: var(--light-mode-color);
     padding-bottom: 48px;
     border: 1px solid var(--accent-color);
     border-top: transparent;
-    transition: box-shadow var(--duration)
+}
+
+.content .link {
+    transition: box-shadow var(--duration) ;
+    display: block;
+}
+
+.content .link:hover,
+.content .link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 
-.content-item:hover,
-.content-item:focus {  
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+.content .link:hover .overlay,
+.content .link:hover .overlay {
+    transform: translateY(0);
+}
+
+.content-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: transform var(--duration);
+    
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--light-mode-color);
+    padding: 40px 32px 164px;
+    background: var(--primaru-brand-color);
 }
