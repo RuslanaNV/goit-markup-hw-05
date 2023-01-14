@@ -13,6 +13,7 @@
      rgba(46, 47, 66, 0.7)
      );
     --valid-fields:#31D0AA;
+    --duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -74,7 +75,6 @@ body {
 .header {
     
     background-color: var(--secondery-text-color);
-/* CORNFLOWER */
     border-bottom: 1px solid var(--accent-color);
 
 }
@@ -140,9 +140,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
-    
-    /* NAVY BLUE */
     color: var(--headings-text-color);
+    transition: color var(--duration);
 
     display: block;
     padding-top: 24px;
@@ -158,15 +157,15 @@ body {
 .contact {
     font-size: 16px;
     line-height: 1.5;
-/* SLATE */
     color: var(--main-text-color);
 
     padding-top: 24px;
     padding-bottom: 24px;
+
+    transition: color var(--duration);
 }
 .contact:hover,
 .contact:focus {
-/* OCEAN */
     color: var(--pressed-state-color);
 }
 
@@ -218,6 +217,7 @@ body {
     border: transparent;
     padding: 16px 32px;
     display: inline-block;
+    transition: background-color var(--duration), color var(--duration), box-shadow var(--duration);
 }
 
 .hero .btn:hover, 
@@ -270,7 +270,6 @@ body {
     min-width: 264px;
 }    
 .section .text {    
-     /* SLATE */
     color: var(--main-text-color);
 }
 
@@ -379,6 +378,7 @@ body {
 
   .team-card .soc-link{
   background-color: var(--primaru-brand-color);
+  transition: background-color var(--duration);
   }
 
   .team-card .soc-link:hover,
@@ -417,6 +417,7 @@ body {
 .customers-item {
     width: calc((100% - 120px) / 6); 
     height: 88px; 
+    
 }
 .customers-link {
     width: 100%;
@@ -427,6 +428,7 @@ body {
     align-items: center;
     justify-content:center ;
     fill: var(--helper-text-color);
+    transition: border-color var(--duration), fill var(--duration);
 }
 
 .customers-link:hover {
@@ -479,6 +481,7 @@ body {
 
 .footer-soc .soc-link {
     background-color:rgba(255, 255, 255, 0.1);
+    transition: background-color var(--duration);
 }
 
 .footer-soc .soc-link:hover,
@@ -541,7 +544,8 @@ fill: var(--light-mode-color);
     border: 1px solid var(--accent-color);
     border-radius: 4px;
 
-    padding: 12px 24px;   
+    padding: 12px 24px;
+    transition: background-color var(--duration), color var(--duration), box-shadow var(--duration);   
 }
 .caption .btn:hover,
 .caption .btn:focus,
@@ -583,7 +587,7 @@ fill: var(--light-mode-color);
     padding-bottom: 48px;
     border: 1px solid var(--accent-color);
     border-top: transparent;
- 
+    transition: box-shadow var(--duration)
 }
 
 
