@@ -136,6 +136,8 @@ body {
 }
 
 .navigation .link {
+    position: relative;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -147,6 +149,19 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
 }
+
+.navigation .link.current::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: var(--pressed-state-color);
+    border-radius: 2px;
+    height: 4px;
+    left: 0;
+    bottom: -1px;
+    
+}
+
 .navigation .link:hover,
 .navigation .link:focus {
     color: var(--pressed-state-color);
