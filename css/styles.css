@@ -546,6 +546,7 @@ fill: var(--light-mode-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform var(--duration) ;
+    padding: 72px 24px;
 }
 
 .backdrop.is-hidden .modal {
